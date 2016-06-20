@@ -1,0 +1,140 @@
+/**
+ * Resets
+ */
+body,
+h1,
+ul {
+  margin: 0;
+}
+
+/**
+ * Global
+ */
+body {
+  background: #f1f1f1;
+  color: #272626;
+  font: normal 20px/1.6 "Noto Sans", sans-serif;
+}
+li {
+  list-style-type: none;
+}
+h1 {
+  font-size: 1.5rem;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.toggle-menu {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+
+/**
+ * Header
+ */
+header {
+  background: #dd3543;
+  box-sizing: border-box;
+  padding: 1em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+nav {
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+  transition: align-items .2s;
+}
+.logo {
+  background: #f35b66;
+  color: #fff;
+  display: inline-block;
+  font-size: 2rem;
+  margin: 2.25em 0 0 2.25em;
+  padding: 1em 1.5em;
+  transition: all .2s;
+}
+ul {
+  display: flex;
+  margin: 2.25em 2.25em 0 0;
+  padding: 0;
+  transition: margin .2s;
+}
+li:not(:last-child) {
+  margin-right: 1em;
+}
+li a {
+  display: block;
+  padding: .5em 1em;
+}
+.toggle-menu {
+  color: #fff;
+  display: none;
+  font-size: 2rem;
+  margin: .5em .5em 0 0;
+  transition: margin .2s;
+}
+
+/**
+ * Main
+ */
+main {
+  display: block;
+  padding: 0 1em;
+}
+
+/**
+ * Scroll
+ */
+.scroll {
+  box-shadow: 0 7px 0 0 rgba(0, 0, 0, .1);
+}
+.scroll .logo {
+  font-size: 1.5rem;
+  padding: .5em 1em;
+}
+.scroll nav {
+  align-items: center;
+}
+.scroll .logo,
+.scroll ul,
+.scroll .toggle-menu {
+  margin: 0;
+}
+
+@media screen and (max-width: 1060px) {
+  header {
+    padding: .5em;
+  }
+  nav {
+    align-items: center;
+  }
+  ul {
+    display: none;
+  }
+  .logo {
+    font-size: 1.8rem;
+    margin: .5em 0 0 .5em;
+  }
+  .toggle-menu {
+    display: block;
+  }
+}
+
+/**
+ * Counter
+ */
+.counter {
+  background: #dd3543;
+  color: #fff;
+  padding: .25em;
+  position: fixed;
+  right: 1px;
+  top: 50%;
+  transform: translateY(-50%);
+  visibility: hidden;
+}
