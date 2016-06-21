@@ -44,10 +44,14 @@ header {
   width: 100%;
 }
 nav {
+  -ms-flex-align: end;
   align-items: flex-end;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   transition: align-items .2s;
+  transition: align-items .2s, -ms-flex-align .2s;
 }
 .logo {
   background: #f35b66;
@@ -59,6 +63,7 @@ nav {
   transition: all .2s;
 }
 ul {
+  display: -ms-flexbox;
   display: flex;
   margin: 2.25em 2.25em 0 0;
   padding: 0;
@@ -98,6 +103,8 @@ main {
   padding: .5em 1em;
 }
 .scroll nav {
+  -ms-flex-align: center;
+  -ms-grid-row-align: center;
   align-items: center;
 }
 .scroll .logo,
@@ -111,6 +118,8 @@ main {
     padding: .5em;
   }
   nav {
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
     align-items: center;
   }
   ul {
