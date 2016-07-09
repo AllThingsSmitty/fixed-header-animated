@@ -44,10 +44,10 @@ header {
   width: 100%;
 }
 nav {
-  -ms-flex-align: end;
   align-items: flex-end;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-align: end;
   -ms-flex-pack: justify;
   justify-content: space-between;
   transition: align-items .2s;
@@ -103,9 +103,9 @@ main {
   padding: .5em 1em;
 }
 .scroll nav {
+  align-items: center;
   -ms-flex-align: center;
   -ms-grid-row-align: center;
-  align-items: center;
 }
 .scroll .logo,
 .scroll ul,
@@ -118,9 +118,9 @@ main {
     padding: .5em;
   }
   nav {
+    align-items: center;
     -ms-flex-align: center;
     -ms-grid-row-align: center;
-    align-items: center;
   }
   ul {
     display: none;
