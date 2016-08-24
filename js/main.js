@@ -42,4 +42,4 @@
   window.onresize = function () {
     setTopPadding();
   };
-})();
+}());
